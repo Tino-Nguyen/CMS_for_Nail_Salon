@@ -13,5 +13,5 @@ The **Customer Management System for Nail Salon** (CMS) is a side project worked
 5. Billings
 6. Customer scoring system
 
-## Techonology stack:
+## Technology stack:
 The project will be mainly developed in React JS and Postgre SQL. Other supporting tools includes Github, Figma, and Asana...
