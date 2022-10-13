@@ -1,6 +1,6 @@
 
 # Customer Management System for Nail Salon
-The **Customer Management System for Nail Salon** (CMS) is a side project worked on by a group of seniors at UHCL ([Nghia Nguyen](https://www.linkedin.com/in/nghia-trong-nguyen/), [Hoang Le](https://www.linkedin.com/in/hoangv-le/), and [Thanh Q Phan](https://www.linkedin.com/in/thanh-quang-phan/). The project was initialized on 10/08/2022.
+The **Customer Management System for Nail Salon** (CMS) is a side project worked on by a group of seniors at UHCL ([Nghia Nguyen](https://www.linkedin.com/in/nghia-trong-nguyen/), [Hoang Le](https://www.linkedin.com/in/hoangv-le/), and [Thanh Q Phan](https://www.linkedin.com/in/thanh-quang-phan/)). The project was initialized on 10/08/2022.
 
 ## Problem Statement:
 **CMS** is to provide nail salons an easy-to-use tool for receptionists/managers to facilitate custmer-facing activities including making appointments, maintaining customer records
