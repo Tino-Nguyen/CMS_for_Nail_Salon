@@ -1,5 +1,6 @@
 
-# This is to test pull request. reviewer shouldn't merge to the main branch
+# This is to test pull request. Reviewer shouldn't merge to the main branch
+# Ignore it and Forgive me if it doesn't work as expected
 
 # Customer Management System for Nail Salon
 The **Customer Management System for Nail Salon** (CMS) is a side project worked on by a group of seniors at UHCL ([Nghia Nguyen](https://www.linkedin.com/in/nghia-trong-nguyen/), [Hoang Le](https://www.linkedin.com/in/hoangv-le/), and [Thanh Q Phan](https://www.linkedin.com/in/thanh-quang-phan/)). The project was initialized on 10/08/2022.
