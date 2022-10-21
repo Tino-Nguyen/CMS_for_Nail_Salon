@@ -15,3 +15,6 @@ The **Customer Management System for Nail Salon** (CMS) is a side project worked
 
 ## Technology stack
 The project will be mainly developed in React JS and Postgre SQL. Other supporting tools include Github, Figma, and Asana...
+
+## Hello World
+I am testing the push command on my computer. - Nghia
