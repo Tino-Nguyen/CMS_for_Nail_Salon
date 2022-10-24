@@ -1,0 +1,9 @@
+#login_module{
+    border: 1px solid black;
+    width: 25em;
+}
+
+#login_module > form {
+    text-align: left;
+}
+
