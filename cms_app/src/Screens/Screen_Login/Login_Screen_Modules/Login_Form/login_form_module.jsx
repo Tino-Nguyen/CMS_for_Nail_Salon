@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import "./login_form_styles.css";
+// THIS IS THE STOPPING POINT! video = 20:42
+import { useAuth } from '../../Context/AuthContext';
 
 export default class login_form_module extends Component {
   render() {
