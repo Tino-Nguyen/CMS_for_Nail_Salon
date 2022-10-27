@@ -8,14 +8,13 @@ export default class login_form_module extends Component {
     return (
       <div id="login_module">
         <form>
-          <h1 id="login_title">Log in</h1>
-          <label for="name_input">Username:</label>
+          <h1 id="login_title">s.nail <span>cms</span></h1>
+       
+          <input type="text" id="name_input" placeholder='username'/>
           <br/>
-          <input type="text" id="name_input"/>
+           
           <br/>
-          <label for="password_input">Password:</label>
-          <br/>
-          <input type="password" id="password_input"/>
+          <input type="password" id="password_input" placeholder='password'/>
           <br/>
           <input type="submit" value="log in"/>
         </form>
