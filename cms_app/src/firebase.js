@@ -1,14 +1,43 @@
-import firebase from "firebase/compat/app";
-import "firebase/compat/auth"
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { useState, useEffect} from "react";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+import {getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged} from 'firebase/auth';
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyB-3aIqvaAyR2R9pn0HtHRP9RIXF6cIiJc",
+  authDomain: "fir-login-fc284.firebaseapp.com",
+  projectId: "fir-login-fc284",
+  storageBucket: "fir-login-fc284.appspot.com",
+  messagingSenderId: "604625458706",
+  appId: "1:604625458706:web:753be319345aeba25e2acb"
+};
 
-const app = firebase.initializeApp({
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID,
-    appId: process.env.REACT_APP_FIREBASE_APP_ID
-})
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
-export const auth = app.auth()
-export default app
+const auth = getAuth();
+
+export const LoginEvent = (email, password) => {
+    return signInWithEmailAndPassword(auth, email, password);
+
+}
+
+export const LogoutEvent = () => {
+    return signOut(auth);
+}
+
+// customized hook
+
+export function UseAuth() {
+    const [currentUser, setCurrentUser] = useState();
+
+    useEffect(() => {
+        const unSubsribe = onAuthStateChanged(auth, user => setCurrentUser(user))
+        return unSubsribe;      
+    
+    }, [])
+    
+    return currentUser;
+}
