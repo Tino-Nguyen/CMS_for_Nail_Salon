@@ -1,29 +1,34 @@
 import React from 'react'
 import SessionCard from './SessionCard'
-import './ActiveSession.css';
-import {sessions} from '../../snails';
+import'./UpcomingSession.css';
+import {sessions} from '../../../_oldforreference/snails';
 
-export default function ActiveSession(props) {
+
+export default function UpcomingSession(props) {
   return (
-    <div id='active'>
-        <h2>Active Sessions</h2>
+    
+    <div id='upcoming'>
+        <h2>Upcoming Sessions</h2>
         {
           sessions.map(session => {
-            if(session.Status === 'active') {
+            {/* here, the session should be filter for the next 2 days
+            and sorted */}
+            if(session.Status === 'scheduled') {
               return <SessionCard 
               custName = {session.CustomerName} 
               date={session.Date}
               time={session.Time}  
               services={session.Service}
-              status={session.Status} 
-              // status here need to be updated for correct render
+              status={session.Status}
               sessionId = {session.SessionID}
               />
             }
             return <></>
           })
         }
+   
         
+      
     </div>
   )
 }
