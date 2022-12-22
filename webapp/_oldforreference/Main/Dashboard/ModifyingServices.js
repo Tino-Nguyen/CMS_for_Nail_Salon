@@ -1,5 +1,5 @@
 import {React , useContext, useEffect, useRef, useState}from 'react'
-import { services } from '../../snails';
+import { services } from '../../../_oldforreference/snails';
 import {SessionContext} from './SessionCard';
 import './ModifyingServices.css'
 
