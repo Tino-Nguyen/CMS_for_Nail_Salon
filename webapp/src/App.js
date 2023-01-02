@@ -1,17 +1,32 @@
 
+import Login from "./Screens/Login/Login.jsx";
+import Homepage from "./Screens/Homepage/Homepage.jsx";
+import Navigation from "./Routing/Navigation.jsx";
+import { BrowserRouter, Route, Routes} from "react-router-dom"
+import PrivateRoute from "./Routing/PrivateRoute.jsx";
+
 
 
 function App() {
 
 
 
-  return (
+  return(
 
+    <BrowserRouter>
+      <Routes>
 
-    <div>
-      let's begin
-    </div>
+        <Route path="/" element={<PrivateRoute/>}/>
+        {/* <Route path="/Home Page" element={<PrivateRoute/>}/> */}
+      </Routes>
+    </BrowserRouter>
   
+
+
+
+  
+  
+
   );
 }
 
