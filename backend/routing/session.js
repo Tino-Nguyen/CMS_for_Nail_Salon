@@ -11,12 +11,14 @@ router.get('/active', (req, res) => {
     // Return: An array of upcoming appointment (JSON obj) at the current day with active status.
 });
 
+// error here
 router.get('/:customerName', (req, res) => {
     res.send(this.param.customerName);
     // Collection: Appointment
     // Return: An array of upcoming sesions of which customer name contains requested 'name.'
 });
 
+// error here
 router.get('/:date/time', (req, res) => {
     res.send(this.param.customerName);
     // Collection: Appointment
