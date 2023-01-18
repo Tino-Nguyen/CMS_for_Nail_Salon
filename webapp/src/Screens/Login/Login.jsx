@@ -40,9 +40,9 @@ export default function Login(props) {
                 <div className="smallercontainer">
 
                     
-                    <input ref={emailRef} type="email" placeholder="Email" required id="inputs"/>
+                    <input ref={emailRef} class="info" type="email" placeholder="Email" required id="inputs"/>
                    
-                    <input ref={passwordRef} type="password" placeholder="Password" required id="inputs"/>
+                    <input ref={passwordRef} class="info" type="password" placeholder="Password" required id="inputs"/>
                     <button type='submit' id="loginButton" onClick={handleLogIn} ><span></span>Log in </button>
                     <p>{confirm}</p>
                     <p>{errMsg}</p>

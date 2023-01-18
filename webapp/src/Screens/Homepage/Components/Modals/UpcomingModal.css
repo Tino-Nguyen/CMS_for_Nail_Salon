@@ -1,0 +1,16 @@
+.UpcomingModal{
+    width: 30%;
+    height: 80%;
+    margin: 10px;
+    
+    
+
+    padding: 0px 10px;
+    
+    display: flex;
+    border-color: #e97861;
+    border-radius: 20px;
+
+    align-items: center;
+    justify-content: space-evenly;
+ }

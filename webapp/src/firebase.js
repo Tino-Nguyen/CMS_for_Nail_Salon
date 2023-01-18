@@ -2,7 +2,7 @@ import { initializeApp } from'firebase/app';
 import {useState, useEffect} from 'react';
 
 //calling the firebase module getAuth
-import{getAuth, signInWithEmailAndPassword, onAuthStateChanged,signOut } from 'firebase/auth';
+import{UserCredential, getAuth, signInWithEmailAndPassword, onAuthStateChanged,signOut } from 'firebase/auth';
 
 
 
@@ -34,7 +34,6 @@ const firebaseConfig = {
 
 
 
-
 // customized hook
 
 export function UseAuth() {
@@ -48,5 +47,7 @@ export function UseAuth() {
   console.log(currentUser);
   return currentUser;
 }
+
+
 
 

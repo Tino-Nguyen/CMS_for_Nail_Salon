@@ -47,18 +47,28 @@
     align-items:center;
     justify-content:center;
     flex-wrap: wrap;
+    
  
     
 }
 
-#input{
-    justify-content: center;
+.info{
+    width: 50%;
+    height: 3%;
+    padding: 20px;
+    border-radius: 25px;
+    border: none;
+    margin-bottom:10px;
+
+
+    
     
 }
 
 
 button{
-    width: 100px;
+    width: 25%;
+    height: 13%;
     padding: 15px 0;
     text-align: center;
     margin: 20px 10px;
@@ -80,7 +90,7 @@ button a{
    
 }
 
-input[type="email"]{
+/*input[type="email"]{
     width: 450px;
     height: 15px;
     padding: 20px;
@@ -98,7 +108,7 @@ input[type="password"]{
     border: none;
     margin-bottom:10px;
 }
-
+*/
 
 
 

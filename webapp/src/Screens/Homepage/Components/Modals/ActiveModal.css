@@ -1,0 +1,16 @@
+.activeModal{
+    width: 30%;
+    height: 80%;
+    margin: 10px;
+    border-radius: 20px;
+    
+    
+
+    padding: 0px 10px;
+    
+    display: flex;
+    border-color: #ea927f;
+
+    align-items: center;
+    justify-content: space-evenly;
+ }
